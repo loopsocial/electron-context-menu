@@ -59,7 +59,7 @@ function create(win, opts) {
 					if (process.platform === 'darwin') {
 						electron.clipboard.writeBookmark(props.linkText, props.linkURL);
 					} else {
-						electron.clipboard.writeText(props.linkURL);
+						electron.clipboard.writeText(props.linkText);
 					}
 				}
 			}, {
